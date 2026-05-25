@@ -1,7 +1,7 @@
 PI - Template Documentação Git
 
-&lt;p align=&quot;left&quot; style=&quot;font-size:28px;&quot;&gt;&lt;strong&gt;&lt;em&gt;Documentação do
-PI&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+p align=left style=font-size:28px strong em& ;Documentação do
+PI /em /strong /p
 &lt;details&gt;
 &lt;summary&gt;&lt;strong&gt;�� Sumário&lt;/strong&gt;&lt;/summary&gt;
 
