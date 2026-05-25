@@ -1,9 +1,9 @@
 PI - Template Documentação Git
 
-p align=left style=font-size:28px strong em& ;Documentação do
+p align=left style=font-size:28px strong em Documentação do
 PI /em /strong /p
-&lt;details&gt;
-&lt;summary&gt;&lt;strong&gt;�� Sumário&lt;/strong&gt;&lt;/summary&gt;
+details
+summary strong Sumário/strong/summary
 
 - [1. Introdução](#1-introdução)
 - [Objetivos](#-objetivos)
