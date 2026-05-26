@@ -30,12 +30,14 @@ incrementalmente.
 (Contextualização, Justificativa (porquê?)
 
 ## • Objetivos
-
+(Objetivos gerais e específicos)
 ## • Metodologia
 (Que métodos, tecnologias, modelos de processo, ferramentas irá utilizar?
 Responde à pergunta: Como? Com o que? Onde? Quando?)
 
 # 2. Requisitos
+## • Histórias dos Usuários
+(Acompanhamento de impacto, registro de qualidade, rotas, agendamento, alerta de multa, alerta de confirmação)
 
 ## • Requisitos funcionais
 (Escreva os requisitos funcionais da aplicação (funcionalidades esperadas,
@@ -43,12 +45,13 @@ necessidades que devem ser atendidas))
 
 ## • Requisitos não funcionais
 (Escreva os requisitos não funcionais da aplicação (qualidade))
-- Requisitos de produto
-- Requisitos de organização
-- Requisitos de confiabilidade
-- Requisito de implementação
-- Requisito de padrões
-- Requisitos de interoperabilidade
+- Desempenho do Sistema
+- Usabilidade
+- Acessibilidade
+- Formatação padrão de Relatórios
+- Estabilidade do Sistema
+- Segurança do Sistema
+- Dashboards Gráficas
 
 # 3. Modelo de casos de uso
 
@@ -60,8 +63,22 @@ necessidades que devem ser atendidas))
 # 6. Diagrama de classes
 
 # 7. Estudo de viabilidade
-# 8. Regras de negócio (Modelo canvas)
+- Viabilidade de Mercado
+- Viabilidade Técnica
+- Viabilidade Financeira
+- Viabilidade Operacional
 
+# 8. Regras de negócio (Modelo canvas)
+## • Modelo de Negócio Canvas
+- Parcerias chaves
+- Atividades chaves
+- Recursos chaves
+- Proposta de valor
+- Relacionamento
+- Canais
+- Segmento dos clientes
+- Estrutura de Custos
+- Fonte de receita
 # 9. Design
 (Paleta de cor, Tipografia, Logo, Wireframes, Modelo de navegação)
 
