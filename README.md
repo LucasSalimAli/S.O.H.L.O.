@@ -1,16 +1,16 @@
 PI - Template Documentação Git
 
-p align=left style=font-size:28px strong em Documentação do
-PI /em /strong /p
-details
-summary strong Sumário/strong/summary
+<p align=left style=font-size:28px> <strong> <em> Documentação do
+PI </em> </strong> </p>
+<details>
+<summary><strong>Sumário</strong></summary>
 
 - [1. Introdução](#1-introdução)
-- [Objetivos](#-objetivos)
-- [Metodologia](#-metodologia)
+- [1.1 Objetivos](#-objetivos)
+- [1.2Metodologia](#-metodologia)
 - [2. Requisitos](#2-requisitos)
-- [Requisitos funcionais](#-requisitos-funcionais)
-- [Requisitos não funcionais](#-requisitos-não-funcionais)
+- [2.1 Requisitos funcionais](#-requisitos-funcionais)
+- [2.2 Requisitos não funcionais](#-requisitos-não-funcionais)
 - [3. Modelo de casos de uso](#3-modelo-de-casos-de-uso)
 - [4. Modelo do banco de dados](#4-modelo-do-banco-de-dados)
 - [5. Banco de dados](#5-banco-de-dados)
@@ -21,7 +21,7 @@ summary strong Sumário/strong/summary
 - [10. Protótipo](#10-protótipo)
 - [11. Aplicação](#11-aplicação)
 
-&lt;/details&gt;
+</details>
 
 Para cada semestre, do 1º ao 6º, iremos utilizar este template para documentar o PI -
 incrementalmente.
@@ -29,7 +29,7 @@ incrementalmente.
 # 1. Introdução
 (Contextualização, Justificativa (porquê?)
 
-## • Objetivos
+## 1.1• Objetivos
 (Objetivos gerais e específicos)
 ## • Metodologia
 (Que métodos, tecnologias, modelos de processo, ferramentas irá utilizar?
