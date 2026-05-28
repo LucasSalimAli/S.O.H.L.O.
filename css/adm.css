@@ -1,0 +1,436 @@
+/*Documento Css customizado para alterações estéticas no Bootstrap e na página em si.*/
+
+
+
+/* ==========================================
+                SEÇÃO DE CORES
+   ========================================== */
+
+/*Tema Escuro */
+:root {
+
+    /*Textos*/
+    --txt_std: #ffffff;
+    --txt_red: #D11010;
+    --txt_green: #00FF48;
+    --txt_blue: #4531E0;
+
+    /*Logo*/
+    --logo_std: #DEE8FF;
+
+    /*Cores*/
+    --bg_body: #252A2D; /*Background Principal*/
+    --bg_navbar: #0E0E0E; /*Background NavBar*/
+    --bg_modes: #121315; /*Background Icones Sidebar*/
+    --bg_sdbar: #1a1c1e; /*Background Itens Sidebar*/
+    --bg_filters: #1C1D21; /*Background Filtros*/
+    --bg_dropdown_filter: #3E3E3E; /*Background da seleção dos filtros grandes)*/
+    --disable_empty: #72767B; /*#212529*/ /*Itens Desabilitados / Vazios / Filtros*/
+    --dashboard: #1C1D21; /*Background Dashboards Geral*/
+    --dashboard_red: #910000; /*Background Dashboard Vermelho*/
+    --dashboard_green: #00982B; /*Background Dashboard Verde*/
+    --dashboard_blue: #1700C4; /*Background Dashboard Azul*/
+   
+    /*Table*/
+    --bg_table: #1C1D21; /*Background da tabela*/
+    --table_divs: #3E3E3E; /*Divisões da tabela*/
+    --table_btn: #4B4C4F; /*Botão Selecionado de cima da tabela (O não selecionado é apenas com um tracejado branco, sem preenchimento)*/
+    --table_status_red: #411717; /*Background do Status vermelho da tabela*/
+    --table_status_green: #17411C; /*Background do Starus verde da tabela*/
+
+    /*Selection*/
+    --selection_blue: #00d2ff; /*Seleção*/
+
+    --sb_hover: #23262b; /*Hover da Sidebar*/
+}
+
+/* Tema Claro */
+[data-theme="light"]{
+    /*Textos*/
+    --txt_std: #000000;
+    --txt_red: #D11010;
+    --txt_green: #00FF48;
+    --txt_blue: #4531E0;
+
+    /*Logo*/
+    --logo_std: #14132B;
+
+    /*Cores*/
+    --bg_body: #ffffff; /*Background Principal*/
+    --bg_navbar: #DCDFE0; /*Background NavBar / Seleção / Pesquisar*/
+    --bg_modes: #E5E9EC; /*Background Icones Sidebar*/
+    --bg_sdbar: #F4F9FF; /*Background Itens Sidebar*/
+    --bg_filters: #E5E9EC; /*Background Filtros*/
+    --bg_dropdown_filter: #848383; /*Background da seleção dos filtros grandes)*/
+    --disable_empty: #72767B; /*#212529*/ /*Itens Desabilitados / Vazios*/
+    --dashboard: #DCDCDC; /*Background Dashboards Geral*/
+    --dashboard_red: #910000; /*Background Dashboard Vermelho*/
+    --dashboard_green: #00982B; /*Background Dashboard Verde*/
+    --dashboard_blue: #1700C4; /*Background Dashboard Azul*/
+   
+     /*Table*/
+    --bg_table: #F5F7F7; /*Background da tabela*/
+    --table_divs: #3E3E3E; /*Divisões da tabela*/
+    --table_btn: #ACAFB1; /*Botão Selecionado de cima da tabela (O não selecionado é apenas com um tracejado preto, sem preenchimento)*/
+    --table_status_red: #D64B4B; /*Background do Status vermelho da tabela*/
+    --table_status_green: #17411C; /*Background do Starus verde da tabela*/
+    
+    /*Selection*/
+    --selection_blue: #00d2ff; /*Seleção*/
+
+    --sb_hover: #e5f0f6; /*Hover da Sidebar*/
+}
+
+
+
+/* ==========================================
+                 SEÇÃO DE TAGS 
+   ========================================== */
+
+/*Fonte padrão do Sistema*/
+body {
+    font-family: 'Science Gothic';
+    background-color: var(--bg_body);
+}
+
+   .main{
+    margin-left: 280px ;
+    margin-right: 34p;
+   }
+
+
+
+/*==========================================
+                    NAVBAR
+  ========================================== */
+
+
+/*Config NavBar*/
+.navbar_std {
+
+    /*Margens*/
+    padding-left: 34px;
+    padding-right: 34px;
+    height: 67px;
+
+    /*Cor BG*/
+    background-color: var(--bg_navbar);
+}
+
+/*Configuração da Logo*/
+.logo{
+    /*Tamanho*/
+    font-size: 40px;
+
+    /*Cor*/
+    color: var(--logo_std);
+}
+
+.logo:hover{
+    color: var(--logo_std);
+    text-decoration: none; 
+    opacity: 1; 
+}
+
+
+/*Botão User*/
+.user_btn {
+    /*Tamanho*/
+    width: 230px;
+    height: 50px;
+
+    /*Alinhamento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    /*Cor*/
+    background-color: var(--bg_navbar);
+    color: var(--txt_std);
+    
+}
+
+/*Texto Botão User*/
+.user_btn span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/*Sumir com a seta do dropdown do Botão User*/
+.user_btn::after {
+    display: none !important;
+}
+
+
+
+
+/*Botão Notificação*/
+.notification_btn{
+    /*Tamanho*/
+    width: 54px;
+    height: 50px;
+
+    /*Alinhamento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     padding: 0 7px;
+
+    /*Espaçamento Notification-User*/
+    margin-right: 20px;
+
+    /*Cor*/
+    background-color: var(--bg_navbar);
+    color: var(--disable_empty);
+}
+
+/*Sumir com a seta do dropdown do Botão User*/
+.notification_btn::after {
+    display: none !important;
+}
+
+
+
+/*Status*/
+.status{
+
+    /*Alinhamento*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /*Espaçamento*/
+    align-self: center;
+    margin-right: 20px;
+
+    /*Cor*/
+    
+}
+
+
+
+
+
+/* ==========================================================================
+                                SIDEBAR DUPLA 
+   ========================================================================== */
+
+/* Container geral da Sidebar (Largura total aproximada de 280px) */
+.sidebar-adm {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg_modes);
+    z-index: 1050;
+    font-family: 'Science Gothic';
+    margin-top: 69px;
+}
+
+
+/* 2. Divisão do corpo em duas colunas */
+.sidebar-body {
+    display: flex;
+    flex-grow: 1;
+    height: calc(100vh - 70px);
+}
+
+/* Sistema Log / Sistema Fin*/
+.sidebar-nav-icons {
+    width: 75px;
+    background-color;
+    border-right: 1px solid #23262b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Empurra o logout para o rodapé */
+    align-items: center;
+    padding: 20px 0;
+}
+
+.icons-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+}
+
+/* Botões de ícones principais */
+.main-icon-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    color: #4e5561; /* Cor desativada */
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.main-icon-btn:hover, 
+.main-icon-btn.active {
+    color: var(--selection_blue);
+    background-color: var(--bg_sdbar);
+}
+
+/* Botão de LogOut no rodapé esquerdo */
+.logout-btn {
+    border: none;
+    background: transparent;
+    color: #8b949e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 90px;
+}
+
+.logout-btn i {
+    font-size: 22px;
+}
+
+.logout-btn:hover {
+    color: var(--txt_red); /* Vermelho sutil no hover do logout */
+}
+
+/* SubMenus */
+.sidebar-submenu-panel {
+    flex-grow: 1;
+    background-color: var(--bg_sdbar); /* Fundo ligeiramente diferente para dar profundidade */
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título do módulo */
+.module-title {
+    color: var(--txt_std);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Caixa de pesquisa interna */
+.sidebar-search-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.sidebar-search-box i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #4e5561;
+    font-size: 14px;
+}
+
+.sidebar-search-box input {
+    width: 100%;
+    background-color: var(--bg_navbar);
+    border: 1px solid var(--txt_std);
+    border-radius: 6px;
+    padding: 8px 12px 8px 36px;
+    color: var(--txt_std);
+    font-size: 13px;
+}
+
+.sidebar-search-box input::placeholder {
+    color: #4e5561;
+}
+
+.sidebar-divider {
+    border-color: var(--txt_std);
+    margin: 10px 0 20px 0;
+    opacity: 1;
+}
+
+/* Links do submenu */
+.submenu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu-link {
+    color: var(--txt_std);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 7px 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent; /* Reserva o espaço da bordinha acesa */
+}
+
+.menu-link:hover {
+    color: var(--txt_std);
+    background-color: var(--sb_hover);
+}
+
+/* Item Selecionado */
+.menu-link.active {
+    color: var(--txt_std);
+    background-color: var(--bg_navbar); /* Fundo do item selecionado */
+    border-left: 3px solid var(--selection_blue); /* A bordinha */
+    font-weight: 400;
+    height: 30px;
+    margin-right: 0;
+}
+
+/* Ajuste das coisas da página*/
+.conteudo-principal {
+    margin-left: 280px; /* Largura sidebar */
+    padding: 30px;
+    min-height: 100vh;
+    background-color: var(--bg_body); /* Fundo do painel de gráficos */
+}
+
+
+
+/* ==========================================
+         EFEITO RECOLHER DA SIDEBAR
+   ========================================== */
+
+/* Adiciona um efeito suave de deslizamento na sidebar e no conteúdo */
+.sidebar-adm, 
+.conteudo-principal {
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sidebar-adm.small {
+    width: 65px;
+}
+
+/* Esconde o painel de submenus de forma limpa */
+.sidebar-adm.small .sidebar-submenu-panel {
+    display: none;
+}
+
+.main.small_sb{
+    margin-left: 75px;
+}
+
+
+
+
