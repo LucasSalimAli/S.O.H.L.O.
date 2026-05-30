@@ -1,0 +1,257 @@
+/*Documento Css customizado para alterações estéticas no Bootstrap e na página em si.*/
+
+
+
+/* ==========================================
+                SEÇÃO DE CORES
+   ========================================== */
+
+/*Tema Escuro */
+:root {
+
+    /*Textos*/
+    --txt_std: #ffffff;
+    --txt_red: #D11010;
+    --txt_green: #00FF48;
+    --txt_blue: #4531E0;
+
+    /*Logo*/
+    --logo_std: #DEE8FF;
+
+    /*Cores*/
+    --bg_body: #001015; /*Background Principal*/
+    --bg_navbar: #192707; /*Background NavBar*/
+
+    /*Selection*/
+    --selection_blue: #00d2ff; /*Seleção*/
+    --selection_green: #32963E; /*Seleção*
+    
+    /*Botões*/
+    --btn_humus: #6761D3;
+    --btn_next: #4E9A22;
+
+    --btn_humus_border: #00d2ff;
+    --btn_back_border: #520e0e;
+    --btn_next_border: #32963E;
+
+    /*Linhas*/
+    --line: #FFFFFF;
+
+}
+
+/*Tema Claro*/
+[data-theme="light"] {
+
+    /*Textos*/
+    --txt_std: #000000;
+    --txt_red: #D11010;
+    --txt_green: #00FF48;
+    --txt_blue: #4531E0;
+
+    /*Logo*/
+    --logo_std: #DEE8FF;
+
+    /*Cores*/
+    --bg_body: #ffffff; /*Background Principal*/
+    --bg_navbar: #192707; /*Background NavBar*/
+
+    /*Selection*/
+    --selection_blue: #00d2ff; /*Seleção*/
+    --selection_green: #32963E; /*Seleção*
+    
+    /*Botões*/
+    --btn_humus: #6761D3;
+    --btn_next: #4E9A22;
+
+    --btn_humus_border: #00d2ff;
+    --btn_back_border: #520e0e;
+    --btn_next_border: #32963E;
+
+    /*Linhas*/
+    --line: #000000;
+
+}
+
+
+
+/* ==========================================
+                     FONTES
+   ========================================== */
+
+@font-face {
+    font-family: 'Freestyle Script';
+    src: url('assets/fonts/FREESCPT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anonymous-Pro';
+    src: url('assets/fonts/AnonymousPro-Regular.ttf') format('truetype');
+
+}
+
+
+
+/* ==========================================
+                 SEÇÃO DE TAGS 
+   ========================================== */
+
+/*Fonte padrão do Sistema*/
+body {
+    font-family: 'Science Gothic';
+    background-color: var(--bg_body);
+}
+
+.main {
+    margin-left: 54px;
+    margin-right: 544p;
+}
+
+/*==========================================
+                    NAVBAR
+  ========================================== */
+
+
+/*Config NavBar*/
+.navbar_std {
+
+    /*Margens*/
+    padding-left: 54px;
+    padding-right: 54px;
+    height: 65px;
+
+    /*Posição*/
+    position: relative;
+
+    /*Cor BG*/
+    background-color: color-mix(in srgb, var(--bg_navbar) 44%, transparent);
+}
+
+
+.logo {
+    color: var(--txt_std);
+    font-family: 'Freestyle Script', cursive;
+
+    font-size: 50px;
+
+    /*Centralizar Logo*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.nav-link {
+    color: var(--txt_std);
+    font-family: 'Anonymous-Pro', monospace;
+
+
+}
+
+.nav-link:hover,
+.logo:hover {
+    color: var(--selection_blue);
+}
+
+
+
+/*==========================================
+               Botões de Baixo
+  ========================================== */
+
+
+
+/*Estrutura geral dos botões*/
+.btn-custom {
+    font-family: 'Science Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+
+    /*Tamanho*/
+    padding: 12px 32px;
+
+    border-radius: 10px;
+
+    /* Transição*/
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: var(--txt_std);
+
+}
+
+
+/*Botão Humus*/
+.btn-humus {
+    background-color: color-mix(in srgb, var(--btn_humus) 40%, transparent);
+    border: 2px solid var(--selection_blue);
+
+
+    box-shadow: 0 0 8px rgba(8, 67, 93, 0.5);
+
+    /*Tamanho*/
+    
+}
+
+/*Efeito ao passar o mouse*/
+.btn-humus:hover {
+    border-color: #1b395c;
+    box-shadow: 0 0 15px rgba(27, 84, 92, 0.7);
+    /*Brilho*/
+    background-color: color-mix(in srgb, #110b5d 60%, transparent);
+
+    /*Cor ao passar o mouse*/
+    color: var(--txt_std)
+}
+
+
+/*Btn Cancelar*/
+.btn-back {
+    background-color: var(--btn_body);
+    border: 2px solid var(--btn_back_border);
+    /*Brilho*/
+    box-shadow: 0 0 8px rgba(56, 13, 13, 0.5);
+}
+
+/* Efeito ao passar o mouse*/
+.btn-back:hover {
+    border-color: #910000;
+    box-shadow: 0 0 15px rgba(92, 27, 27, 0.7);
+    /*Brilho*/
+    background-color: color-mix(in srgb, #420707 40%, transparent);
+    
+    /*Cor ao passar o mouse*/
+    color: var(--txt_std);
+}
+
+/*Btn Proximo Página / Assinar*/
+.btn-next {
+    background-color: color-mix(in srgb, var(--btn_next) 30%, transparent);
+    border: 2px solid var(--btn_next_border);
+
+    /*Brilho*/
+    box-shadow: 0 0 8px rgba(31, 77, 43, 0.5);
+}
+
+/* Efeito ao passar o mouse*/
+.btn-next:hover {
+    background-color: color-mix(in srgb, #62f400 30%, transparent);
+    border-color: #01d401;
+     /*Brilho*/
+    box-shadow: 0 0 15px rgba(46, 112, 64, 0.8);
+
+    /*Cor ao passar o mouse*/
+    color: var(--txt_std);
+}
+
+/* Efeito de clique */
+.btn-custom:active {
+    transform: scale(0.98);
+    
+}

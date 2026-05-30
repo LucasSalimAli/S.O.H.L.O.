@@ -1,0 +1,121 @@
+/*Documento Css customizado para alterações estéticas no Bootstrap e na página em si.*/
+
+
+
+/* ==========================================
+                SEÇÃO DE CORES
+   ========================================== */
+
+/*Tema Escuro */
+:root {
+
+    /*Textos*/
+    --txt_std: #DEE8FF;
+    --txt_red: #D11010;
+    --txt_green: #00FF48;
+    --txt_blue: #4531E0;
+
+    /*Logo*/
+    --logo_std: #DEE8FF;
+
+    /*Cores*/
+    --bg_body: #001015;
+    /*Background Principal*/
+    --bg_navbar: #192707;
+    /*Background NavBar*/
+
+    /*Selection*/
+    --selection_blue: #00d2ff;
+    /*Seleção*/
+
+
+}
+
+
+
+/* ==========================================
+                     FONTES
+   ========================================== */
+
+@font-face {
+    font-family: 'Freestyle Script';
+    src: url('assets/fonts/FREESCPT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('assets/fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anonymous-Pro';
+    src: url('assets/fonts/AnonymousPro-Regular.ttf') format('truetype');
+
+}
+
+
+
+/* ==========================================
+                 SEÇÃO DE TAGS 
+   ========================================== */
+
+/*Fonte padrão do Sistema*/
+body {
+    font-family: 'Science Gothic';
+    background-color: var(--bg_body);
+}
+
+.main {
+    margin-left: 54px;
+    margin-right: 544p;
+}
+
+/*==========================================
+                    NAVBAR
+  ========================================== */
+
+
+/*Config NavBar*/
+.navbar_std {
+
+    /*Margens*/
+    padding-left: 54px;
+    padding-right: 54px;
+    height: 65px;
+
+    /*Cor BG*/
+    background-color: color-mix(in srgb, var(--bg_navbar) 44%, transparent);
+}
+
+.logo {
+    color: var(--txt_std);
+    font-family: 'Freestyle Script', cursive;
+    
+    font-size: 50px;
+
+
+}
+
+.nav-link {
+    color: var(--txt_std);
+    font-family: 'Anonymous-Pro', monospace;
+
+
+}
+
+.nav-link:hover,
+.logo:hover {
+    color: var(--selection_blue);
+}
+
+.subs-btn {
+    width: 660px;
+    font-family: 'Anonymous-Pro', monospace;
+    background-color: color-mix(in srgb, #4E9A22 40%, transparent);;
+}
+
+.login-btn {
+    margin-left: 20px;
+    font-family: 'Anonymous-Pro', monospace;
+     background-color: color-mix(in srgb, #6761D3 40%, transparent);
+}
